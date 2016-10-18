@@ -1,7 +1,7 @@
 module Spree
   module SitemapHelper
 
-    def taxons_list(parent_taxon, level = 1)
+    def taxons_list(parent_taxon, level = 5)
 
       return '' if level < 1 || parent_taxon.leaf?
 

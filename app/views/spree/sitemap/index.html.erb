@@ -54,11 +54,11 @@
 
   #site-map ul.level-2 {
     margin: 5px 0 0 0;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   #site-map li.level-2 {
-    text-decoration: none;
+    list-style-type: square;
   }
 </style>
 
@@ -66,10 +66,8 @@
 <div class="container" id="site-map">
   <h1>Site Map</h1>
 
-  <h2>Products</h2>
-  <% levels = 5 %>
-  <% cache [I18n.locale, @taxonomy, levels] do %>
-      <%= taxons_list(@taxonomy.root, levels) %>
+  <% cache [I18n.locale, @taxonomy] do %>
+      <%= taxons_list(@taxonomy.root) %>
   <% end %>
 
 </div>
