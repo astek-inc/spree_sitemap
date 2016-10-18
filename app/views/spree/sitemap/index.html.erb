@@ -1,73 +1,7 @@
-
-<style type="text/css">
-  #site-map li {
-    list-style: none;
-  }
-
-  #site-map ul.level-5 {
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  #site-map li.level-5 {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  #site-map ul.level-4 {
-    margin: 5px 0 0 0;
-    padding-left: 10px;
-    clear: both;
-    overflow: auto;
-  }
-
-  #site-map li.level-4 {
-    margin-bottom: 20px;
-    font-weight: normal;
-    clear: both;
-    overflow: auto;
-    font-style: italic;
-  }
-
-  #site-map li.level-4.no-children {
-    width: 33%;
-    float: left;
-    clear: none;
-    margin-bottom: 0;
-  }
-
-  #site-map ul.level-3 {
-    margin: 5px 0 0 0;
-    padding-left: 10px;
-  }
-
-  #site-map li.level-3 {
-    width: 33%;
-    float: left;
-    margin-bottom: 10px;
-    font-style: normal;
-  }
-
-  #site-map li.level-3.no-children {
-    margin-bottom: 0;
-  }
-
-  #site-map ul.level-2 {
-    margin: 5px 0 0 0;
-    padding-left: 20px;
-  }
-
-  #site-map li.level-2 {
-    list-style-type: square;
-  }
-</style>
-
-
 <div class="container" id="site-map">
   <h1>Site Map</h1>
 
   <% cache [I18n.locale, @taxonomy] do %>
       <%= taxons_list(@taxonomy.root) %>
   <% end %>
-
 </div>
