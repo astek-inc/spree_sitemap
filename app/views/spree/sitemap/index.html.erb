@@ -1,7 +1,26 @@
 <div class="container" id="site-map">
+
   <h1>Site Map</h1>
 
-  <% cache [I18n.locale, @taxonomy] do %>
-      <%= taxons_list(@taxonomy.root) %>
-  <% end %>
+  <section>
+    <h2>Products</h2>
+    <% cache [I18n.locale, @taxonomy] do %>
+        <%= taxons_list(@taxonomy.root) %>
+    <% end %>
+  </section>
+
+  <section>
+    <h2>Help</h2>
+    <% cache [I18n.locale, 'help-links'] do %>
+        <%= help_links_list %>
+    <% end %>
+  </section>
+
+  <section>
+    <h2>Blog</h2>
+    <% cache [I18n.locale, 'blog-links'] do %>
+        <%= blog_links_list %>
+    <% end %>
+  </section>
+
 </div>
