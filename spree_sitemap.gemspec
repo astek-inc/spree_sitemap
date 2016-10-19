@@ -8,13 +8,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_sitemap'
   s.version     = SpreeSitemap.version
-  s.summary     = 'Provides a sitemap file for Spree'
+  s.summary     = 'Provides a sitemap file and page for Spree'
   s.description = s.summary
   s.required_ruby_version = '>= 2.1.0'
 
-  s.author            = 'Jeff Dutil'
-  s.email             = 'jdutil@burlingtonwebapps.com'
-  s.homepage          = 'https://github.com/spree-contrib/spree_sitemap'
+  s.author            = 'Edwi Horneij'
+  s.email             = 'edwin@astekwallcovering.com'
+  s.homepage          = 'https://www.designyourwall.com'
 
   s.files        = `git ls-files`.split("\n")
   s.test_files   = `git ls-files -- spec/*`.split("\n")
